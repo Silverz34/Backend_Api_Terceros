@@ -1,11 +1,10 @@
-# 1. Usamos una versión ligera de Node.js (Alpine es ideal para producción)
+# 1. Usamos una versión ligera de Node.js 
 FROM node:20-alpine
 
 # 2. Establecemos la carpeta de trabajo dentro del contenedor
 WORKDIR /src
 
 # 3. Copiamos solo los archivos de configuración de dependencias primero
-# Esto ayuda a que Docker use su caché y construya más rápido
 COPY package*.json ./
 COPY tsconfig.json ./
 
