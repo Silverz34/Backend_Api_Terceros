@@ -3,42 +3,43 @@
   "compilerOptions": {
     // File Layout
     // "rootDir": "./src",
-    // "outDir": "./dist",
+    "outDir": "./build",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
-    "types": [],
+    "module": "CommonJS",
+    "target": "es2022",
+    //"types": [],
+    "moduleResolution": "node",
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
-
+    "esModuleInterop": true,
     // Other Outputs
     "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    //"declaration": true,
+    //"declarationMap": true,
 
     // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
+    //"noUncheckedIndexedAccess": true,
+    //"exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
     // Style Options
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
+    //"noUnusedLocals": true,
+    //"noUnusedParameters": true,
+    //"noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
     "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
+    //"jsx": "react-jsx",
+    //"verbatimModuleSyntax": false,
+    //"isolatedModules": true,
+    //"noUncheckedSideEffectImports": true,
+    //"moduleDetection": "force",
     "skipLibCheck": true,
   }
 }
