@@ -15,7 +15,6 @@ app.use(cors({
     methods: ['GET'] 
 }));
 
-
 app.get('/api', async (req: Request, res: Response) => {
    try {
         const response = await axios.get(API_URL);

@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+ backend_bff:
+    build: 
+     context: .
+     dockerfile: Dockerfile
+    container_name: api_intermedia
+    restart: unless_stopped
+    ports:
+      - "4000 : 4000" 
+    env_file:
+      - .env 
