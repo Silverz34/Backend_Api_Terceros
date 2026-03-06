@@ -5,8 +5,11 @@ services:
      context: .
      dockerfile: Dockerfile
     container_name: api_intermedia
-    restart: unless_stopped
+    restart: unless-stopped
     ports:
       - "4000:4000" 
+    environment:
+      PORT: ${PORT}
+      API_URL: ${API_URL}  
     env_file:
       - .env 

@@ -1,17 +1,15 @@
 
 FROM node:20-alpine
 
-WORKDIR /src
-
-
+WORKDIR /app
 COPY package*.json ./
 COPY tsconfig.json ./
 
 RUN npm install
 
-COPY src/ ./src/
+COPY src/ ./src
 
-RUN npm run dev
+RUN npm run build
 
 EXPOSE 4000
 
