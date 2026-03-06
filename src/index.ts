@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 const API_URL = process.env.API_URL || '';
 
 app.use(cors({
-    origin: 'https://consumo-api-terceros-ndt3vxorw-silverz34s-projects.vercel.app/', 
+    origin: 'https://consumo-api-terceros-ndt3vxorw-silverz34s-projects.vercel.app', 
     methods: ['GET'] 
 }));
 
